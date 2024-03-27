@@ -1,0 +1,55 @@
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+  }
+  
+  body {
+    display:flex;
+    align-items: center;
+    align-content:center;
+    justify-content:center;
+    height: 100vh;
+  }
+  
+  .container {
+    width:450px;
+    max-width:50%;
+  }
+  
+  .chimney {
+    width:50px;
+    height:100px;
+    background-color:yellow;
+    position:absolute;
+    z-index:-10;
+    left:50px;
+  }
+  
+  .roof {
+    width: 0;
+    height: 0;
+    border-left: 225px solid transparent;
+    border-right: 225px solid transparent;
+    border-bottom: 160px solid blue;
+    position:relative;
+  }
+  
+  .base {
+    width:450px;
+    height:250px;
+    background-color:pink;
+    border:1px solid black;
+    position:relative;
+  }
+  
+  .window {
+    width:100px;
+    height:100px;
+    background-color:skyblue;
+    border:2px solid black;
+    border-radius:50%;
+    position:absolute;
+    top:50px;
+    left:80px;
+  }
